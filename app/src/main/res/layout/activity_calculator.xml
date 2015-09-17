@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="CE"
         android:id="@+id/btce"
+        android:onClick="excCE"
         android:layout_below="@+id/editText" />
 
     <Button
@@ -39,6 +40,7 @@
         android:layout_height="wrap_content"
         android:text="C"
         android:id="@+id/btc"
+        android:onClick="excC"
         android:layout_below="@+id/editText"
         android:layout_toEndOf="@+id/btce" />
 
@@ -47,6 +49,7 @@
         android:layout_height="wrap_content"
         android:text="&lt;"
         android:id="@+id/bteraser"
+        android:onClick="erase"
         android:layout_alignBottom="@+id/btc"
         android:layout_toEndOf="@+id/btc" />
 
@@ -183,6 +186,7 @@
         android:layout_height="wrap_content"
         android:text="="
         android:id="@+id/btequal"
+        android:onClick="showResult"
         android:layout_below="@+id/btsum"
         android:layout_toEndOf="@id/bt3" />
 </RelativeLayout>
